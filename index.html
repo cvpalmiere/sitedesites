@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de Prova - Design de Interfaces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="left-colored">
+            <div class="title-container">
+                <h1>Entrega Final Feita Como Revisão da Prova</h1>
+                <p class="instruction-text">(Escolha um livro para ler seu conteúdo)</p>
+            </div>
+            <svg class="melt-divider" viewBox="0 0 100 1000" preserveAspectRatio="none">
+                <path d="M0,0 L100,0 C100,80 30,80 30,160 C30,240 90,240 90,320 C90,400 20,400 20,480 C20,560 100,560 100,640 C100,720 40,720 40,800 C40,880 80,880 80,960 C80,1000 100,1000 100,1000 L0,1000 Z" fill="#1664A5"></path>
+            </svg>
+        </section>
+
+        <section class="right-white">
+            <div class="bookshelf-wrapper">
+                <div class="shelf-row">
+                    <div class="books-container">
+                        <div class="book deco deco-1"></div>
+                        <div class="book deco deco-2"></div>
+                        <button class="book interactive book-ihc" data-target="card-ihc"><span>1) IHC</span></button>
+                        <div class="book deco deco-3"></div>
+                        <button class="book interactive book-design" data-target="card-design"><span>2) Design Thinking</span></button>
+                        <div class="book deco deco-4"></div>
+                        <div class="book deco deco-5"></div>
+                    </div>
+                    <div class="shelf-base"></div>
+                </div>
+
+                <div class="shelf-row">
+                    <div class="books-container">
+                        <div class="book deco deco-6"></div>
+                        <button class="book interactive book-heuristics" data-target="card-heuristics"><span>3) Heurísticas</span></button>
+                        <div class="book deco deco-7"></div>
+                        <button class="book interactive book-wcag" data-target="card-wcag"><span>4) WCAG & Cores</span></button>
+                        <div class="book deco deco-8"></div>
+                        <button class="book interactive book-uxui" data-target="card-uxui"><span>5) UX/UI</span></button>
+                        <div class="book deco deco-9"></div>
+                    </div>
+                    <div class="shelf-base"></div>
+                </div>
+            </div>
+
+            <div class="explanation-area">
+                <article id="card-ihc" class="info-card theme-ihc">
+                    <h2>1) IHC (Interação Humano-Computador)</h2>
+                    <div class="bento-grid">
+                        <div class="bento-item full-width">
+                            <h3>Definição</h3>
+                            <p>IHC é a área da computação que estuda a interação entre pessoas e sistemas computacionais. Ela envolve design, avaliação e implementação de interfaces, considerando aspectos cognitivos, sociais e emocionais dos usuários.</p> 
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>Principais tópicos</h3>
+                            <ul class="content-list">
+                                <li><strong>Usabilidade:</strong> facilidade de uso, eficiência, memorabilidade, prevenção de erros e satisfação.</li>
+                                <li><strong>Acessibilidade:</strong> garantir que pessoas com diferentes habilidades possam usar os sistemas.</li>
+                                <li><strong>Experiência do Usuário (UX):</strong> emoções e percepções ao interagir com o sistema.</li>
+                                <li><strong>Modelos mentais:</strong> como o usuário entende o funcionamento do sistema.</li>
+                                <li><strong>Engenharia cognitiva:</strong> carga mental, atenção, memória, percepção.</li>
+                                <li><strong>Métodos de avaliação:</strong> testes de usabilidade, avaliação heurística, entrevistas, questionários.</li>
+                                <li><strong>Paradigmas de interação:</strong> linha de comando, WIMP (janelas, ícones, menus, ponteiro), toque, voz, gestos, realidade aumentada/virtual.</li>
+                                <li><strong>Design centrado no usuário:</strong> envolvimento do usuário em todas as etapas do projeto.</li>
+                            </ul>
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>Importância</h3>
+                            <p>IHC garante que a tecnologia seja útil, utilizável e agradável, reduzindo erros e aumentando a produtividade.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="card-design" class="info-card theme-design">
+                    <h2>2) Design Thinking</h2>
+                    <div class="bento-grid">
+                        <div class="bento-item full-width">
+                            <h3>Definição</h3>
+                            <p>É uma abordagem de resolução de problemas centrada no ser humano, usada para inovação e desenvolvimento de produtos/serviços. Combina empatia, criatividade e racionalidade.</p>
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>Fases (modelo clássico da IDEO/Stanford d.school)</h3>
+                            <div class="sub-block">
+                                <p><strong>Empatia:</strong></p>
+                                <p>Entender profundamente o usuário.</p>
+                                <p><em>Ferramentas:</em> entrevistas, observação, imersão, personas, mapa de empatia.</p>
+                            </div>
+                            <div class="sub-block">
+                                <p><strong>Definição:</strong></p>
+                                <p>Sintetizar as informações coletadas e definir o problema central.</p>
+                                <p><em>Ferramentas:</em> ponto de vista (POV), jornada do usuário, insights.</p>
+                            </div>
+                            <div class="sub-block">
+                                <p><strong>Ideação:</strong></p>
+                                <p>Gerar o máximo de ideias possíveis, sem julgamento inicial.</p>
+                                <p><em>Ferramentas:</em> brainstorming, brainwriting, mapas mentais, SCAMPER.</p>
+                            </div>
+                            <div class="sub-block">
+                                <p><strong>Prototipagem:</strong></p>
+                                <p>Criar versões simples e baratas da solução para testar.</p>
+                                <p><em>Tipos:</em> protótipos de papel, wireframes, mockups, modelos físicos, encenações.</p>
+                            </div>
+                            <div class="sub-block">
+                                <p><strong>Teste:</strong></p>
+                                <p>Colocar o protótipo na mão do usuário e coletar feedback.</p>
+                                <p><em>Ferramentas:</em> teste de usabilidade, observação, entrevistas pós-teste.</p>
+                            </div>
+                        </div>
+                        <div class="bento-item">
+                            <h3>Princípios</h3>
+                            <ul class="content-list">
+                                <li>Foco no ser humano.</li>
+                                <li>Colaboração multidisciplinar.</li>
+                                <li>Experimentação e iteração.</li>
+                                <li>Pensamento visual e tangível.</li>
+                                <li>Tolerância ao erro e aprendizado contínuo.</li>
+                            </ul>
+                        </div>
+                        <div class="bento-item">
+                            <h3>Aplicações</h3>
+                            <p>Desenvolvimento de produtos digitais, serviços, processos organizacionais, educação, saúde etc.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="card-heuristics" class="info-card theme-heuristics">
+                    <h2>3) Heurísticas de Nielsen</h2>
+                    <div class="bento-grid">
+                        <div class="bento-item full-width">
+                            <h3>Definição</h3>
+                            <p>São 10 princípios gerais de design de interface criados por Jakob Nielsen e Rolf Molich. Servem como diretrizes para avaliação de usabilidade (avaliação heurística).</p>
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>As 10 heurísticas</h3>
+                            <ul class="content-list">
+                                <li><strong>Visibilidade do status do sistema:</strong> O sistema deve informar o que está acontecendo (ex.: barra de progresso, indicador de carregamento).</li>
+                                <li><strong>Correspondência entre o sistema e o mundo real:</strong> Usar linguagem familiar ao usuário, não jargão técnico. Ícones e metáforas do mundo real.</li>
+                                <li><strong>Controle e liberdade do usuário:</strong> Permitir desfazer/refazer ações, sair de estados indesejados (ex.: botão "voltar", "cancelar").</li>
+                                <li><strong>Consistência e padrões:</strong> Manter a mesma terminologia e layout em todo o sistema. Seguir convenções de plataforma.</li>
+                                <li><strong>Prevenção de erros:</strong> Projetar para evitar erros antes que aconteçam (ex.: confirmação antes de excluir, validação de formulários).</li>
+                                <li><strong>Reconhecimento em vez de memorização:</strong> Mostrar opções e informações visíveis, reduzir a carga de memória do usuário.</li>
+                                <li><strong>Flexibilidade e eficiência de uso:</strong> Atalhos para usuários experientes, personalização, comandos avançados.</li>
+                                <li><strong>Estética e design minimalista:</strong> Evitar informações irrelevantes ou raras. Menos é mais.</li>
+                                <li><strong>Ajudar os usuários a reconhecer, diagnosticar e recuperar erros:</strong> Mensagens de erro claras, em linguagem simples, indicando o problema e a solução.</li>
+                                <li><strong>Ajuda e documentação:</strong> Oferecer ajuda contextual, FAQs, tutoriais, embora o ideal seja o sistema não precisar de explicação.</li>
+                            </ul>
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>Aplicação</h3>
+                            <p>Na avaliação heurística, especialistas percorrem a interface identificando violações dessas heurísticas e classificando a severidade dos problemas.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="card-wcag" class="info-card theme-wcag">
+                    <h2>4) WCAG e Paletas de Cores</h2>
+                    <div class="bento-grid">
+                        <div class="bento-item full-width">
+                            <h3>WCAG (Web Content Accessibility Guidelines)</h3>
+                            <p><strong>Definição:</strong> Diretrizes internacionais para tornar conteúdo web mais acessível a pessoas com deficiência (visual, auditiva, motora, cognitiva). Desenvolvidas pelo W3C.</p>
+                        </div>
+                        <div class="bento-item">
+                            <h3>Princípios (POUR)</h3>
+                            <ul class="content-list">
+                                <li><strong>Perceptível:</strong> as informações devem ser apresentadas de formas que os usuários possam perceber (ex.: texto alternativo em imagens, legendas em vídeos).</li>
+                                <li><strong>Operável:</strong> os componentes da interface devem ser operáveis (ex.: navegação por teclado, tempo suficiente para leitura).</li>
+                                <li><strong>Compreensível:</strong> informação e operação devem ser compreensíveis (ex.: linguagem clara, consistência).</li>
+                                <li><strong>Robusto:</strong> conteúdo deve ser interpretado por diferentes agentes (ex.: compatibilidade com leitores de tela).</li>
+                            </ul>
+                        </div>
+                        <div class="bento-item">
+                            <h3>Níveis de conformidade</h3>
+                            <ul class="content-list">
+                                <li><strong>A:</strong> mínimo essencial.</li>
+                                <li><strong>AA:</strong> padrão recomendado (maioria das leis).</li>
+                                <li><strong>AAA:</strong> acessibilidade avançada.</li>
+                            </ul>
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>Critérios importantes</h3>
+                            <ul class="content-list">
+                                <li>Contraste de texto (mínimo 4.5:1 para texto normal, 3:1 para texto grande).</li>
+                                <li>Uso de cores não como único meio de transmitir informação (ex.: gráficos com padrões ou rótulos).</li>
+                                <li>Foco visível em elementos interativos.</li>
+                                <li>Texto alternativo para imagens.</li>
+                                <li>Legendas e transcrições para multimídia.</li>
+                            </ul>
+                        </div>
+                        <div class="bento-item">
+                            <h3>Paletas de Cores Acessíveis</h3>
+                            <p><strong>Princípios:</strong> Contraste adequado (garantir legibilidade entre texto e fundo). Não depender só de cor (usar ícones, texturas, sublinhados, padrões). Cores para daltônicos (evitar combinações problemáticas como vermelho/verde; usar azul/laranja ou variações de luminosidade). Paletas testadas (Colorable, Contrast Checker, Stark).</p>
+                        </div>
+                        <div class="bento-item">
+                            <h3>Ferramentas e Boas Práticas</h3>
+                            <p><strong>Ferramentas:</strong> Adobe Color, Coolors, WebAIM Contrast Checker, Who Can Use.</p>
+                            <p><strong>Exemplo de boas práticas:</strong> Fundo branco com texto preto ou cinza escuro (#333). Botões com cor vibrante e texto branco, desde que o contraste seja ≥ 4.5:1. Uso de bordas ou ícones para diferenciar estados (erro, sucesso) além da cor.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="card-uxui" class="info-card theme-uxui">
+                    <h2>5) UX/UI em Desenvolvimento de Interfaces</h2>
+                    <div class="bento-grid">
+                        <div class="bento-item">
+                            <h3>UX (User Experience)</h3>
+                            <p><strong>Definição:</strong> Experiência geral do usuário ao interagir com um produto/serviço, incluindo emoções, percepções, facilidade de uso, utilidade e valor percebido.</p>
+                            <p><strong>Componentes:</strong> Pesquisa com usuários, Arquitetura da informação, Fluxos de usuário, Wireframes, Prototipagem, Testes de usabilidade, Métricas (tempo de tarefa, taxa de erro, NPS, SUS).</p>
+                            <p><strong>Princípios:</strong> Foco no usuário, Simplicidade e clareza, Consistência, Feedback constante, Acessibilidade e inclusão, Design emocional.</p>
+                        </div>
+                        <div class="bento-item">
+                            <h3>UI (User Interface)</h3>
+                            <p><strong>Definição:</strong> Interface do usuário é o meio visual e interativo pelo qual o usuário se comunica com o sistema. Envolve elementos gráficos, tipografia, cores, ícones, botões, etc.</p>
+                            <p><strong>Componentes:</strong> Layout, Tipografia, Cores, Ícones, Componentes estruturais (botões, inputs, modais), Estados (normal, hover, ativo, focado, desabilitado, erro), Motion design, Design system.</p>
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>Diferença entre UX e UI</h3>
+                            <p>UX é sobre como funciona e como o usuário se sente. UI é sobre como se parece e como se interage visualmente.</p>
+                        </div>
+                        <div class="bento-item full-width">
+                            <h3>Processo de desenvolvimento e Ferramentas</h3>
+                            <p><strong>Processo:</strong> Pesquisa, Definição, Arquitetura da informação, Wireframes, Protótipo de alta fidelidade, Testes, Iteração, Entrega para desenvolvimento, Acompanhamento pós-lançamento.</p>
+                            <p><strong>Ferramentas comuns:</strong> Pesquisa (Maze, Typeform, Google Forms), Wireframe/Prototipagem (Figma, Sketch, Adobe XD, Balsamiq), Design system (Storybook, Zeroheight), Testes (UserTesting, Hotjar, Lookback).</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
